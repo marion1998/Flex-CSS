@@ -2,7 +2,9 @@ p{
 	line-height: 30px;
 	padding-top: 20px;
 }
-
+.navbar-menu a{
+	text-decoration: none;
+}
 .navbar-menu ul{
 	list-style: none;
 	border-bottom: solid;
