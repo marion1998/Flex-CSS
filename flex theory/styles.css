@@ -1,6 +1,6 @@
 body {
 	display : grid;
-	grid-template-columns: 20% auto 20% ;
+	grid-template-columns: 10% auto 10% ;
 	grid-template-rows: 50px auto 50px ;
 	grid-template-areas :"hd hd hd"
 						 "lside main rside"
@@ -61,14 +61,28 @@ footer {
 }
 
 .exemple {
-	display :flex;
-	justify-content: flex-start;
+	width : 33%;
+	border : 3px solid black;
+	display : flex;
 }
 
-.property {
-	
+.rectangle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #272822;
+	color:white;
+	border : 1px solid white;
 }
 
 .code {
-	background-color: grey;
+	background-color: #272822;
+	color : white;
+	width : 33%;
+	font-family: sans-serif;
+	padding-left :15px;
+}
+
+p.letter {
+	padding : 0 10px 0 10px;
 }
