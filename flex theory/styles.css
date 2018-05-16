@@ -61,12 +61,15 @@ footer {
 }
 
 .exemple {
-	display :flex;
-	justify-content: flex-start;
+	width : 33%;
 }
 
-.property {
-	
+.rectangle {
+	display: flex;
+	justify-content: center;
+	background-color: #272822;
+	color:white;
+	border : 1px solid white;
 }
 
 .code {
