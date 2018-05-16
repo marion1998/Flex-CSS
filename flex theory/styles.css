@@ -1,0 +1,74 @@
+body {
+	display : grid;
+	grid-template-columns: 20% auto 20% ;
+	grid-template-rows: 50px auto 50px ;
+	grid-template-areas :"hd hd hd"
+						 "lside main rside"
+						 "ft ft ft";
+						}
+
+/* navbar */
+						 
+header {
+	grid-area : hd;
+}
+
+.navbar-menu a{
+	text-decoration: none;
+}
+.navbar-menu ul{
+	list-style: none;
+	border-bottom: solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+li{
+	padding-bottom: 10px;
+}
+
+/* main content */
+
+main {
+	grid-area : main;
+}
+
+/* footer */
+
+footer {
+	background-color : #C2CDDEFF ;
+	grid-area : ft;
+	display :flex;
+	justify-content : cente;
+}
+
+/* aside left & right */
+
+#leftside {
+	grid-area : lside;
+}
+
+#rightside {
+	grid-area : rside;
+}
+
+
+.container {
+	display :flex;
+	justify-content: space-between;
+	padding : 10px;
+}
+
+.exemple {
+	display :flex;
+	justify-content: flex-start;
+}
+
+.property {
+	
+}
+
+.code {
+	background-color: grey;
+}
