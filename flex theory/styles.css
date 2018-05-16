@@ -63,7 +63,15 @@ footer {
 .exemple {
 	width : 33%;
 	border : 3px solid black;
-	display : flex;
+	display :flex;
+	justify-content: none;
+	align-items: none;
+	flex-direction: none;
+	order: 0;
+	/*align-self*/
+	flex-wrap: nonwrap;
+	/*flex-flow*/
+	align-content: none;
 }
 
 .rectangle {
