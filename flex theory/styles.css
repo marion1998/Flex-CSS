@@ -62,11 +62,14 @@ footer {
 
 .exemple {
 	width : 33%;
+	border : 3px solid black;
+	display : flex;
 }
 
 .rectangle {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	background-color: #272822;
 	color:white;
 	border : 1px solid white;
@@ -78,4 +81,8 @@ footer {
 	width : 33%;
 	font-family: sans-serif;
 	padding-left :15px;
+}
+
+p.letter {
+	padding : 0 10px 0 10px;
 }
