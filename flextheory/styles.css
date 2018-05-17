@@ -1,7 +1,7 @@
 body {
 	display : grid;
 	grid-template-columns: 10% auto 10% ;
-	grid-template-rows: 50px auto 50px ;
+	grid-template-rows: 5% auto 5% ;
 	grid-template-areas :"hd hd hd"
 						 "lside main rside"
 						 "ft ft ft";
@@ -11,24 +11,26 @@ body {
 						 
 header {
 	grid-area : hd;
+	background-color: #272822;
 }
 
 .navbar-menu a{
 	text-decoration: none;
-	color :black;
+	color : white;
 	font-family: sans-serif;
 }
 .navbar-menu ul{
 	list-style: none;
-	border-bottom: solid;
+	/*border-bottom: solid;*/
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-li{
+/*li{
 	padding-bottom: 10px;
-}
+}*/
 
 /* main content */
 
@@ -60,10 +62,11 @@ footer {
 	display :flex;
 	justify-content: space-between;
 	padding : 10px;
+	height : 230px;
 }
 
 .exemple {
-	width : 33%;
+	width : 35%;
 	border : 3px solid black;
 	display :flex;
 	justify-content: none;
@@ -90,11 +93,37 @@ footer {
 .code {
 	background-color: #272822;
 	color : white;
-	width : 33%;
+	width : 35%;
 	font-family: sans-serif;
 	padding-left :15px;
 }
 
 p.letter {
 	padding : 0 10px 0 10px;
+}
+
+#ex9 {
+	flex-wrap: wrap;
+}
+
+.carre1 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: #272822;
+	color:white;
+	border : 1px solid white;
+	height : 40px;
+	width : 40px;
+}
+
+.carre2 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background-color: #272822;
+	color:white;
+	border : 1px solid white;
+	height : 40px;
+	width : 40px;
 }
