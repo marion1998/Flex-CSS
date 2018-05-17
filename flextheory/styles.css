@@ -14,7 +14,7 @@ header {
 	background-color: #272822;
 }
 
-.navbar-menu a{
+a{
 	text-decoration: none;
 	color : white;
 	font-family: sans-serif;
@@ -26,6 +26,13 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+.footer ul {
+	display : flex;
+	flex-direction : row;
+	justify-content: space-around;
+	list-style: none;
 }
 
 /*li{
@@ -41,10 +48,8 @@ main {
 /* footer */
 
 footer {
-	background-color : #C2CDDEFF ;
+	background-color : #272822;;
 	grid-area : ft;
-	display :flex;
-	justify-content : cente;
 }
 
 /* aside left & right */
