@@ -1,9 +1,14 @@
+body {
+	font-family: sans-serif;
+}
+
 p{
 	line-height: 30px;
 	padding-top: 20px;
 }
 .navbar-menu a{
 	text-decoration: none;
+	color: black;
 }
 .navbar-menu ul{
 	list-style: none;
