@@ -1,0 +1,85 @@
+.navbar-menu a{
+	text-decoration: none;
+	color :black;
+	font-family: sans-serif;
+}
+.navbar-menu ul{
+	list-style: none;
+	border-bottom: solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.navbar-menu ul li{
+	padding-bottom: 10px;
+
+}
+
+h1{
+}
+
+/* container général contenant tout la grille (il y a la navbar au dessus et le footer en dessous,
+je n'ai pas jugé pratique de les inclure dans la grille comme ça je ne fais qu'une ligne)*/
+
+.container{
+	display: grid;
+	grid-template-columns: 10% auto 10% ;
+	grid-template-rows: 100% ;
+	grid-template-areas: "leftside main rightside";
+}
+
+
+/* la première colonne, à gauche, vide*/
+
+.leftside{
+	grid-area: leftside;
+}
+
+/* la troisième colonne, à droite, vide*/
+.rightside{
+	grid-area: rightside;
+}
+
+/* la deuxième colonne, celle du milieu, tout le contenu est dedans.
+	A part les h2, tout est repartitionné en div*/
+
+
+main{
+	grid-area: main;
+}
+
+/* une section = une propriété = une ligne
+	C'est dans ces div que je mets le flex pour les blocs de code et les exemples.
+*/
+.section{
+	display: flex;
+	padding : 10px;
+	justify-content: space-between;
+}
+
+
+
+.codeblock{
+	background-color: #272822;
+	color :white;
+	width:33%;
+	font-family: sans-serif;
+	padding-left: 15px;
+}
+
+
+.example{
+	width:33%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+
+
+.example div{
+	border: solid;
+}

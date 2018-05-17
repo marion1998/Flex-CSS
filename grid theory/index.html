@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Grid Course</title>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navbar-menu">
+			<ul>
+				<li><a href="">Homepage</a></li>
+				<li><a href="">Flex Theory</a></li>
+				<li><a href="">Flex Practice</a></li>
+				<li><a href="">Grid Theory</a></li>
+				<li><a href="">Grid Practice</a></li>
+				<li><a href="">When use Flex or Grid ?</a></li>
+				<li><a href="">Overall Practice</a></li>
+			</ul>
+		</div>	
+	</nav>
+
+	<h1>The Grid Theory</h1>
+	<div class="container"> <!-- the grid container -->
+
+	<!-- the two border columns -->
+
+		<div id="leftside"></div>
+
+		<div id="rightside"></div>
+
+	
+		<main>
+
+
+				<!-- display   -->
+				
+
+
+
+			<h2>Display</h2>
+			<div class="section">
+				<div class="codeblock">
+					<p>.container {</p>
+					<p>display: grid | none ;</p>
+					<p>}</p>
+					<br>
+					<br>
+				</div>
+				<div class="example">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+
+
+
+	<!--  grid-template-  -->
+
+
+
+
+
+			<h2>Grid-template-columns</h2>
+			<div class="section">
+				<div class="codeblock">
+					<p>.container {</p>
+					<p>grid-template-colums: none | line name | track size | auto ;</p>
+					<p>}</p>
+					<br>
+					<br>
+				</div>
+				<div class="example">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					</div>
+			</div>
+
+
+
+
+
+
+	<!--  grid-template-  -->
+
+
+
+
+
+
+			<h2>Grid-template-rows</h2>
+			<div class="section">
+				<div class="codeblock">
+					<p>.container {</p>
+					<p>grid-template-colums: none | line name | track size | auto ;</p>
+					<p>}</p>
+					<br>
+					<br>
+				</div>
+				<div class="example">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+
+
+
+		
+
+	<!--  grid-template-areas -->
+
+
+
+
+			<h2>Grid-template-areas</h2>
+			<div class="section">
+				<div class="codeblock">
+					<p>.container {</p>
+					<p>grid-template-areas: none | string ;</p>
+					<p>}</p>
+					<br>
+					<br>
+					<br>
+					
+				</div>
+				<div class="example">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+
+
+
+		<!-- Gaps -->
+
+
+			<h2>Gaps</h2>
+			<div class="section">
+				<div class="codeblock">
+					<p>.container {</p>
+					<p>row-gap: value ;</p>
+					<p>column-gap: value ;</p>
+					<p>gap: value ;</p>
+					<p>}</p>
+				</div>
+				<div class="example">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			
+			<hr /style="margin-top: 200px">
+
+<!--   Properties on items -->
+
+			<h1>Placing Items</h1>
+			<p>Be careful with those, only use to define what we call a gridcell</p>
+			<p>An automatic placement for items that aren't placed</p>
+
+
+
+<!--      Grid Row -->
+
+
+			<h2>Grid Row</h2>
+			<div class="section">
+				<div class="codeblock">
+					<p>.item {</p>
+					<p>grid-row-start : line name | line number ;</p>
+					<p>grid-row-end : line name | line number ;</p>
+					<p>grid-row-: ;</p>
+					<p>}</p>
+				</div>
+				<div class="example">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				</div>
+			</div>
+
+<!-- Grid Column Start  -->
+
+
+			<h2>Grid Column</h2>
+			<div class="section">
+				<div class="codeblock">
+					<p>.item {</p>
+					<p>grid-column-start : line name | line number ;</p>
+					<p>grid-column-end : line name | line number ;</p>
+					<p>grid-column: ;</p>
+					<p>}</p>
+				</div>
+				<div class="example">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+
+<!-- 		Auto Placement   -->
+
+
+
+			<h2>Auto Placement - Grid Auto Flow</h2>
+			<p>An automatic placement for items that aren't placed</p>
+			<div class="section">
+				<div class="codeblock">
+					<p>.item {</p>
+					<p>grid-auto-flow : row ;</p>
+					<p>grid-auto-flow : column ;</p>
+					<p>grid-auto-flow : dense ;</p>
+					<p>}</p>
+				</div>
+				<div class="example">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+			
+
+
+
+
+
+
+		
+	</main>
+	<script src="../scripts/jquery-3.3.1.min.js"></script>
+	<script src="../scripts/myscript.js"></script>
+</body>
+</html>
