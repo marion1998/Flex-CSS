@@ -145,3 +145,9 @@ p.letter {
 #main-order-item{
 	background-color: #872657;
 }
+button{
+	background-color: transparent;
+	color: white;
+	border-width:1px;
+	margin-bottom: 2px;
+}
