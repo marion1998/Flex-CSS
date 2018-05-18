@@ -12,8 +12,8 @@
 		<nav class="navbar">
 		<div class="navbar-menu">
 			<ul>
-				<li><a href="">Homepage</a></li>
-				<li><a href="">Flex Theory</a></li>
+				<li><a href="../index.html">Homepage</a></li>
+				<li><a href="index.html">Flex Theory</a></li>
 				<li><a href="">Flex Practice</a></li>
 				<li><a href="">Grid Theory</a></li>
 				<li><a href="">Grid Practice</a></li>
@@ -43,7 +43,9 @@
 
 				<div class="code">
 					<p>.container {</p>
-					<p>display: flex/none;</p>
+					<p>display: <button name="display" type="button" class="btn" >flex</button> | 
+								<button name="display" type="button" class="btn" >block</button> ;
+					</p>
 					<p>}</p>
 				</div>
 
@@ -84,11 +86,16 @@
 				<div class="code">
 					<p>.container {</p>
 					<p>display: flex;</p>
-					<p>justify-content: center/flex-start/flex-end/space-around/space-between;</p>
+					<p>justify-content: <button name="justify-content" type="button" class="btn" >center</button> |
+										<button name="justify-content" type="button" class="btn" >flex-start</button> |
+										<button name="justify-content" type="button" class="btn" >flex-end</button> |
+										<button name="justify-content" type="button" class="btn" >space-around</button>
+										<button name="justify-content" type="button" class="btn" >space-between</button> ;
+					</p>
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex1">
+				<div class="exemple" id="ex2">
 
 					<div class="rectangle">
 						<p class="letter">A</p>
@@ -125,25 +132,30 @@
 				<div class="code">
 					<p>.container {</p>
 					<p>display: flex;</p>
-					<p>align-items: flex-start/flex-end/center/baseline/stretch;</p>
+					<p>align-items: <button name="align-items" type="button" class="btn" >flex-start</button> |
+									<button name="align-items" type="button" class="btn" >flex-end</button> |
+									<button name="align-items" type="button" class="btn" >center</button> |
+									<button name="align-items" type="button" class="btn" >baseline</button> |
+									<button name="align-items" type="button" class="btn" >stretch</button> ;
+					</p>
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex1">
+				<div class="exemple" id="ex3">
 
-					<div class="rectangle">
+					<div class="carre1">
 						<p class="letter">A</p>
 					</div>
-					<div class="rectangle">
+					<div class="carre2">
 						<p class="letter">B</p>
 					</div>
-					<div class="rectangle">
+					<div class="carre1">
 						<p class="letter">C</p>
 					</div>
-					<div class="rectangle">
+					<div class="carre2">
 						<p class="letter">D</p>
 					</div>
-					<div class="rectangle">
+					<div class="carre1">
 						<p class="letter">E</p>
 					</div>
 					
@@ -166,11 +178,15 @@
 				<div class="code">
 					<p>.container {</p>
 					<p>display: flex;</p>
-					<p>flex-direction: row/row-reverse/column/column-reverse;</p>
+					<p>flex-direction: 	<button name="flex-direction" type="button" class="btn" >row</button> |
+										<button name="flex-direction" type="button" class="btn" >row-reverse</button> |
+										<button name="flex-direction" type="button" class="btn" >column</button> |
+										<button name="flex-direction" type="button" class="btn" >column-reverse</button> ;
+					</p>
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex1">
+				<div class="exemple" id="ex4">
 
 					<div class="rectangle">
 						<p class="letter">A</p>
@@ -211,7 +227,7 @@
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex1">
+				<div class="exemple" id="ex5">
 
 					<div class="rectangle">
 						<p class="letter">A</p>
@@ -248,11 +264,16 @@
 				<div class="code">
 					<p>.container {</p>
 					<p>display: flex;</p>
-					<p>align-self : flex-start/flex-end/center/baseline/stretch</p>
+					<p>align-self : <button name="align-self" type="button" class="btn" >flex-start</button> |
+									<button name="align-self" type="button" class="btn" >flex-end</button> |
+									<button name="align-self" type="button" class="btn" >center</button> |
+									<button name="align-self" type="button" class="btn" >baseline</button> |
+									<button name="align-self" type="button" class="btn" >stretch</button> ;
+					</p>
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex1">
+				<div class="exemple" id="ex6">
 
 					<div class="rectangle">
 						<p class="letter">A</p>
@@ -289,11 +310,14 @@
 				<div class="code">
 					<p>.container {</p>
 					<p>display: flex;</p>
-					<p>flex-wrap : nowrap/wrap/wrap-reverse</p>
+					<p>flex-wrap : 	<button name="flex-wrap" type="button" class="btn" >nowrap</button> |
+									<button name="flex-wrap" type="button" class="btn" >wrap</button> |
+									<button name="flex-wrap" type="button" class="btn" >wrap-reverse</button> ;
+					</p>
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex1">
+				<div class="exemple" id="ex7">
 
 					<div class="rectangle">
 						<p class="letter">A</p>
@@ -309,6 +333,27 @@
 					</div>
 					<div class="rectangle">
 						<p class="letter">E</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">F</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">G</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">H</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">I</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">J</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">K</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">L</p>
 					</div>
 					
 				</div>
@@ -334,7 +379,7 @@
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex1">
+				<div class="exemple" id="ex8">
 
 					<div class="rectangle">
 						<p class="letter">A</p>
@@ -370,11 +415,17 @@
 				<div class="code">
 					<p>.container {</p>
 					<p>display: flex;</p>
-					<p>align-content : flex-start/flex-end/center/space-between/spece-around/stretch</p>
+					<p>align-content : 	<button name="align-content" type="button" class="btn" >flex-start</button> |
+										<button name="align-content" type="button" class="btn" >flex-end</button> |
+										<button name="align-content" type="button" class="btn" >center</button> |
+										<button name="align-content" type="button" class="btn" >space-between</button> |
+										<button name="align-content" type="button" class="btn" >space-around</button> |
+										<button name="align-content" type="button" class="btn" >stretch</button> ;
+					</p>
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex1">
+				<div class="exemple" id="ex9">
 
 					<div class="rectangle">
 						<p class="letter">A</p>
@@ -391,6 +442,27 @@
 					<div class="rectangle">
 						<p class="letter">E</p>
 					</div>
+					<div class="rectangle">
+						<p class="letter">F</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">G</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">H</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">I</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">J</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">K</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">L</p>
+					</div>
 					
 				</div>
 
@@ -404,12 +476,21 @@
 
 	<!-- end main content -->
 
-	<footer> 
+	<footer class="footer"> 
 
-		FOOTER ----------------------
+		<ul>
+				<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com</a></li>
+				<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout">mozilla.org</a></li>
+				<li><a href="https://la-cascade.io/flexbox-guide-complet/">la-cascade.io</a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 
 	</footer>
-	
+	<script src="../scripts/jquery-3.3.1.min.js"></script>
+	<script src="../scripts/myscript.js"></script>
 </body>
 </html>
 

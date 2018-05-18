@@ -6,12 +6,15 @@
 	<title>FlexBox - CSSGrid</title>
 </head>
 <body>
+
+	<header>
+
 	<nav class="navbar">
 		<div class="navbar-menu">
 			<ul>
-				<li><a href="">Homepage</a></li>
-				<li><a href="">Flex Theory</a></li>
-				<li><a href="">Flex Pratice</a></li>
+				<li><a href="index.html">Homepage</a></li>
+				<li><a href="flextheory/index.html">Flex Theory</a></li>
+				<li><a href="">Flex Practice</a></li>
 				<li><a href="">Grid Theory</a></li>
 				<li><a href="">Grid Practice</a></li>
 				<li><a href="">When use Flex or Grid ?</a></li>
@@ -19,11 +22,20 @@
 			</ul>
 		</div>	
 	</nav>
+
+	</header>
+
+	<div id="leftside"></div>
+
+	<div id="rightside"></div>
+
+	<main>
+
 	<div class="container">
 		<div class="hero-unit">
 			<h1>Hey</h1>
 			<h2>Bienvenue !!</h2>
-				<br/>
+			<br/>
 			<p>Sur ce petit site sans prétention tu découvriras, visiteur ébahi, la <strong>puissance insoupçonnée</strong> de deux modules CSS qui pourront transformer ton expérience de développeur et te faciliter la vie, avec un peu de pratique.</p>
 			
 		</div>
@@ -32,45 +44,49 @@
 		</div>
 		<div>
 			<p>Le module de mise en page <i>Flexbox</i> (ou <i>Flexbox Layout</i> en anglais), introduit avec CSS3, procure aujourd'hui aux développeurs un outil puissant qui leur permet de répartir efficacement l'espace que prennent les éléments dans un container, alors même que leur taille est inconnue.
-			<br/>
-			Construit dans l'idée de donner aux containers la capacité d'altérer la largeur et la hauteur des éléments pour trouver la meilleure manière de remplir l'espace, <i>Flexbox</i> est également une excellente solution pour s'adapter à tous types d'appareils et de résolutions et donc créer des sites webs ou des applications "responsive".</p>
+				<br/>
+				Construit dans l'idée de donner aux containers la capacité d'altérer la largeur et la hauteur des éléments pour trouver la meilleure manière de remplir l'espace, <i>Flexbox</i> est également une excellente solution pour s'adapter à tous types d'appareils et de résolutions et donc créer des sites webs ou des applications "responsive".</p>
+			</div>
+			<hr />
+			<div>
+				<h1>CSS-Grid</h1>
+			</div>
+			<div>
+				<p>Le module <i>CSS Grid Layout</i> (modèle de disposition en grille) permet quant à lui de créer des mises en page sur un modèle de grille en deux dimensions (lignes et colonnes). Il est pratique pour créer des architectures de page qui étaient autrefois très complexes sinon impossible à mettre en place. Cette grille est responsive et s'adapte donc dynamiquement à de nombreuses résolutions.</p>
+			</div>
+			<hr />
+			<h1>En Bref</h1>
+			<div class="summary">
+				<p>Nous allons vous présenter ces deux modules en expliquant leurs différentes propriétés ainsi que les valeurs qu'il est possible de leur affecter. Une page vous permettra également à chaque fois de vous familiariser avec l'outil grâce à une superbe interface utilisateur ;)</p>
+			</div>
+			<div>
+				<p>Nous essaierons enfin de voir ce qui différencie <i>Flexbox layout</i> et <i>CSS-Grid Layout</i> et s'il est possible de les utiliser ensemble.</p>
+			</div>
+			<hr />
+			<div class="up">
+				<button id="backtop">Retour haut de page</button>
+			</div>
+
 		</div>
-		<hr />
-		<div>
-			<h1>CSS-Grid</h1>
-		</div>
-		<div>
-			<p>Le module <i>CSS Grid Layout</i> (modèle de disposition en grille) permet quant à lui de créer des mises en page sur un modèle de grille en deux dimensions (lignes et colonnes). Il est pratique pour créer des architectures de page qui étaient autrefois très complexes sinon impossible à mettre en place. Cette grille est responsive et s'adapte donc dynamiquement à de nombreuses résolutions.</p>
-		</div>
-		<hr />
-		<h1>En Bref</h1>
-		<div class="summary">
-			<p>Nous allons vous présenter ces deux modules en expliquant leurs différentes propriétés ainsi que les valeurs qu'il est possible de leur affecter. Une page vous permettra également à chaque fois de vous familiariser avec l'outil grâce à une superbe interface utilisateur ;)</p>
-		</div>
-		<div>
-			<p>Nous essaierons enfin de voir ce qui différencie <i>Flexbox layout</i> et <i>CSS-Grid Layout</i> et s'il est possible de les utiliser ensemble.</p>
-		</div>
-		<hr />
-		<div class="up">
-			<button><p>Ce serait cool de mettre un ptit truc pour remonter en haut de la page non ?</p></button>
-		</div>
-		<div>
+
+		</main>
+
+		<footer>
+
+			<ul>
+				<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com</a></li>
+				<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout">mozilla.org</a></li>
+				<li><a href="https://la-cascade.io/flexbox-guide-complet/">la-cascade.io</a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 			
-			<div class="ressources">
-				<div>
-			<h2>Sources</h2>
-			</div>
-				<ul>
-					<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com</a></li>
-					<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout">mozilla.org</a></li>
-					<li><a href="https://la-cascade.io/flexbox-guide-complet/">la-cascade.io</a></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="app.js"></script>
+
+	</body>
+	</html>
