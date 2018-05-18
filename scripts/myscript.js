@@ -4,7 +4,12 @@ $(document).ready(function(){
         var btnName = $(this).attr('name');
         var divExample = $(this).parents('.code').siblings('.exemple');
 
-        divExample.css('color', 'red');
-        divExample.css(btnName, btnText);
+        if(btnName == 'order'){
+            divExample.children("#main-order-item").css(btnName, btnText);
+            divExample.children("#main-order-item").children("p").text(btnText);
+        }else{
+            divExample.css(btnName, btnText);
+        }
+        
     })
 });
