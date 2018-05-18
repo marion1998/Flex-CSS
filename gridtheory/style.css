@@ -1,15 +1,18 @@
+.navbar{
+	padding-top: 5px;
+	background-color: #272822;
+}
+
 .navbar-menu a{
 	text-decoration: none;
-	color :black;
+	color :white;
 	font-family: sans-serif;
 }
 .navbar-menu ul{
 	list-style: none;
-	border-bottom: solid;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 }
 
 .navbar-menu ul li{
