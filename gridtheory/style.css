@@ -92,9 +92,13 @@ main{
 }
 
 footer {
+	color: white;
 	background-color : #272822;
 }
-
+footer h4{
+	padding-left: 10px;
+	padding-top: 10px;
+}
 
 
 footer ul {
@@ -112,7 +116,7 @@ footer ul li {
 
 footer ul li a{
 	text-decoration: none;
-	color: white;
+	color:#23c3ef;
 }
 
 

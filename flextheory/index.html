@@ -35,8 +35,8 @@
 		<!-- display flex -->
 		<h1>The Flex Theory</h1>
 		<p>Le module <span>Flexbox</span> est apparu avec CSS3 et est aujourd'hui largement supporté par les navigateurs internet. Ce module permet une manipulation facilitée et flexible (comme son nom l'indique) des éléments dans un flux et résout notamment les problèmes de mise en page de type <i>float</i>.</p>
-		<p>Le <span>Flex</span> peut être appliqué à deux types d'éléments : le <strong>container</strong> (que l'on appellera ici le "flex container") et <strong>l'item</strong>. A l'aide de propriétés que nous allons vous présenter, il est ainsi possible d'organiser les items au sein d'un container ou de réorganiser ces items en leur ajoutant du CSS.</p>
-		<p><span>Flexbox</span> est basé sur l'utilisation des deux axes qu'il faut définir en début d'utilisation pour ensuite aligner les items (ou éléments) le long de ces axes : l'axe <strong>principal</strong> et l'axe <strong>secondaire</strong>.</p>
+		<p>Le <span>Flex</span> peut être appliqué à deux types d'éléments : le <strong>container</strong> (que l'on appellera ici le "flex container") et <strong>l'item</strong>. A l'aide de propriétés que nous allons vous présenter, il est ainsi possible d'organiser les items (ou éléments) au sein d'un container ou de réorganiser ces items en leur ajoutant du CSS.</p>
+		<p><span>Flexbox</span> est basé sur l'utilisation des deux axes qu'il faut définir en début d'utilisation pour ensuite aligner les items le long de ces axes : l'axe <strong>principal</strong> et l'axe <strong>secondaire</strong>.</p>
 		<hr />
 		<div id="display">
 
@@ -180,10 +180,63 @@
 
 		<!-- align-content -->
 
-		<div id="align-content">
+		
+
+		<!-- align-items -->
+
+		<div id="align-items">
+
+			<h2>align-items</h2>
+			<p>"align-items" peut être vu comme l'équivalent de "justify-content" mais cette fois-ci sur l'axe secondaire du container. Cette propriété permet donc de disposer les éléments comme on le désire sur l'axe secondaire cette fois-ci.</p>
+			<p>Vous remarquerez que les valeurs ne sont pas toutes les mêmes, on dispose cette fois-ci des valeurs baseline (qui aligne le contenu texte des éléments) et stretch (qui étire les éléments afin qu'ils remplissent tout l'espace disponible).</p>
+
+			<div class="container">
+
+				<div class="code">
+					<p>.container {</p>
+					<p>display: flex;</p>
+					<p>align-items: <button name="align-items" type="button" class="btn" >flex-start</button> |
+									<button name="align-items" type="button" class="btn" >flex-end</button> |
+									<button name="align-items" type="button" class="btn" >center</button> |
+									<button name="align-items" type="button" class="btn" >baseline</button> |
+									<button name="align-items" type="button" class="btn" >stretch</button> ;
+					</p>
+					<p>}</p>
+				</div>
+
+				<div class="exemple" id="ex3">
+
+					<div class="carre1">
+						<p class="letter">A</p>
+					</div>
+					<div class="carre2">
+						<p class="letter">B</p>
+					</div>
+					<div class="carre1">
+						<p class="letter">C</p>
+					</div>
+					<div class="carre2">
+						<p class="letter">D</p>
+					</div>
+					<div class="carre1">
+						<p class="letter">E</p>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- end align-items -->
+
+
+
+<div id="align-content">
 
 			<h2>align-content</h2>
-			<p>align-content peut être vu comme l'équivalent de "justify-content" mais cette fois-ci sur l'axe secondaire du container. Ces deux propriétés acceptent donc les mêmes valeurs.</p>
+			<p>"align-content" est utilisé pour déterminer le comportement au sein d'un container, sur l'axe secondaire, lorsque le contenu s'étale sur plusieurs lignes. Il est bon de noter qu' "align-content" ne fera <strong>rien</strong> si le contenu tient sur une seule ligne.</p>
+			
 			<div class="container">
 				<div class="code">
 					<p>.container {</p>
@@ -245,55 +298,6 @@
 
 		<!-- end align-content -->
 
-
-
-		<!-- align-items -->
-
-		<div id="align-items">
-
-			<h2>align-items</h2>
-			<p>Tout comme "justify-content", la propriété "align-items" permet de disposer les éléments comme on le désire, mais sur l'axe secondaire cette fois-ci.</p>
-			<p>Vous remarquerez que les valeurs ne sont pas toutes les mêmes, on dispose cette fois-ci des valeurs baseline (qui aligne le contenu texte des éléments) et stretch (qui étire les éléments afin qu'ils remplissent tout l'espace disponible).</p>
-
-			<div class="container">
-
-				<div class="code">
-					<p>.container {</p>
-					<p>display: flex;</p>
-					<p>align-items: <button name="align-items" type="button" class="btn" >flex-start</button> |
-									<button name="align-items" type="button" class="btn" >flex-end</button> |
-									<button name="align-items" type="button" class="btn" >center</button> |
-									<button name="align-items" type="button" class="btn" >baseline</button> |
-									<button name="align-items" type="button" class="btn" >stretch</button> ;
-					</p>
-					<p>}</p>
-				</div>
-
-				<div class="exemple" id="ex3">
-
-					<div class="carre1">
-						<p class="letter">A</p>
-					</div>
-					<div class="carre2">
-						<p class="letter">B</p>
-					</div>
-					<div class="carre1">
-						<p class="letter">C</p>
-					</div>
-					<div class="carre2">
-						<p class="letter">D</p>
-					</div>
-					<div class="carre1">
-						<p class="letter">E</p>
-					</div>
-					
-				</div>
-
-			</div>
-
-		</div>
-
-		<!-- end align-items -->
 
 
 <!-- flex-wrap -->
