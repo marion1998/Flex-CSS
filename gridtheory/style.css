@@ -87,6 +87,10 @@ main{
 	border: solid;
 }
 
+.example-grid-item{
+	background-color: #872657;
+}
+
 footer {
 	background-color : #272822;
 }
