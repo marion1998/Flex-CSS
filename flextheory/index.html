@@ -372,14 +372,18 @@
 		<div id="flex-flow">
 
 			<h2>flex-flow</h2>
-			<p>La propriété flex-flow n'est qu'un raccourcis pour définir en même temps les propriétés flex-direction et flex-wrap.</p>
-			<p>Soyez attentifs, il est conseillé de n'utiliser les "propriétés doubles" une fois que vous êtes déjà à l'aise avec l'utilisation des propriétés simples.</p>
+			<p>La propriété flex-flow n'est qu'un raccourci pour définir en même temps les propriétés flex-direction et flex-wrap.</p>
+			<p>Soyez attentifs, il est conseillé de n'utiliser les "propriétés doubles" qu'une fois que vous êtes déjà à l'aise avec l'utilisation des propriétés simples.</p>
 			<div class="container">
 
 				<div class="code">
 					<p>.container {</p>
 					<p>display: flex;</p>
-					<p>flex-flow : direction + wrap value</p>
+					<p><button name="flex-flow" type="button" class="btn" >row wrap</button> |
+									<button name="flex-flow" type="button" class="btn" >column wrap-reverse</button> |
+									<button name="flex-flow" type="button" class="btn" >column wrap</button> |
+									<button name="flex-flow" type="button" class="btn" >row-reverse nowrap</button>
+									 ;</p>
 					<p>}</p>
 				</div>
 
@@ -400,6 +404,27 @@
 					<div class="rectangle">
 						<p class="letter">E</p>
 					</div>
+					<div class="rectangle">
+						<p class="letter">F</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">G</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">H</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">I</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">J</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">K</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">L</p>
+					</div>
 					
 				</div>
 
@@ -410,7 +435,7 @@
 		<!-- end flex-flow -->
 
 		<div class="warning">
-		<h2><strong>Attention</strong>,</h2><p> les prochaines propriétés sont à appliquer <strong>directement sur l'item</strong> et non plus sur son container.</p>
+		<h2><strong>Attention</strong>,</h2><p> Les prochaines propriétés sont à appliquer <strong>directement sur l'item</strong> et non plus sur son container.</p>
 		<p>Il ne faudra pas oublier d'appliquer tout de même un "display : flex;" sur le container afin "d'activer" les propriétés sur les items <strong>dans</strong> ce container.</p>
 		</div>
 		<!-- align-self -->
