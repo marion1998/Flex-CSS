@@ -141,9 +141,17 @@ p.letter {
 	order: 4;
 }
 
-#main-order-item{
+#main-order-item , #main-align-self-item {
 	background-color: #872657;
 }
+
+/* align-self section */
+
+#ex6 {
+	align-items : flex-start;
+}
+
+
 button{
 	background-color: transparent;
 	color: white;
