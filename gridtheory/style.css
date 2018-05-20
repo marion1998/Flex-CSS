@@ -114,3 +114,14 @@ footer ul li a{
 	text-decoration: none;
 	color: white;
 }
+
+
+@media only screen and (max-device-width : 700px) {
+	.navbar-menu ul{
+	flex-direction: column;
+	}
+	footer ul {
+		flex-direction: column;
+	}
+
+}
