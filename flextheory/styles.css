@@ -112,27 +112,28 @@ p.letter {
 	flex-wrap: wrap;
 }
 
-.carre1 {
+.carre {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
+	
 	background-color: #272822;
 	color:white;
 	border : 1px solid white;
-	height : 40px;
+	
 	width : 40px;
+	height: auto;
 }
 
-.carre2 {
+/*.carre2 {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 	background-color: #272822;
 	color:white;
 	border : 1px solid white;
-	height : 40px;
+	height : auto;
 	width : 40px;
-}
+}*/
 
 /* Order section */
 #order-item1{
