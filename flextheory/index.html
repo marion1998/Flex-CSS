@@ -34,7 +34,9 @@
 
 		<!-- display flex -->
 		<h1>The Flex Theory</h1>
-		<p>Le module flexbox blablabla expliquer les deux axes à utiliser tout ça tout ça</p>
+		<p>Le module <span>Flexbox</span> est apparu avec CSS3 et est aujourd'hui largement supporté par les navigateurs internet. Ce module permet une manipulation facilitée et flexible (comme son nom l'indique) des éléments dans un flux et résout notamment les problèmes de mise en page de type <i>float</i>.</p>
+		<p>Le <span>Flex</span> peut être appliqué à deux types d'éléments : le <strong>container</strong> (que l'on appellera ici le "flex container") et <strong>l'item</strong>. A l'aide de propriétés que nous allons vous présenter, il est ainsi possible d'organiser les items au sein d'un container ou de réorganiser ces items en leur ajoutant du CSS.</p>
+		<p><span>Flexbox</span> est basé sur l'utilisation des deux axes qu'il faut définir en début d'utilisation pour ensuite aligner les items (ou éléments) le long de ces axes : l'axe <strong>principal</strong> et l'axe <strong>secondaire</strong>.</p>
 		<hr />
 		<div id="display">
 
@@ -77,13 +79,62 @@
 
 		<!-- end display flex -->
 
+
+<!-- flex-direction -->
+
+		<div id="flex-direction">
+
+			<h2>flex-direction</h2>
+			<p>flex-direction est, en général, la première propriété à définir afin de choisir l'axe principal que les éléments devront suivre par défaut dans le container visé. Il peut s'agir d'un axe horizontal (valeur par défaut) ou vertical.</p>
+			<div class="container">
+
+				<div class="code">
+					<p>.container {</p>
+					<p>display: flex;</p>
+					<p>flex-direction: 	<button name="flex-direction" type="button" class="btn" >row</button> |
+										<button name="flex-direction" type="button" class="btn" >row-reverse</button> |
+										<button name="flex-direction" type="button" class="btn" >column</button> |
+										<button name="flex-direction" type="button" class="btn" >column-reverse</button> ;
+					</p>
+					<p>}</p>
+				</div>
+
+				<div class="exemple" id="ex4">
+
+					<div class="rectangle">
+						<p class="letter">A</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">B</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">C</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">D</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">E</p>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- end flex-direction -->
+
+
+
+
 		<!-- justify-content -->
 
 		<div id="justify">
 
 			<h2>justify-content</h2>
 			<p>La propriété "justify-content" permet d'organiser les éléments sur l'axe principal (défini par la propriété "flex-direction").</p>
-			<p>On peut ainsi les placer au début, à la fin ou au milieu de cet axe. De plus, cette propriété nous aide à disposer de l'espace restant. Il est en effet possible de répartir l'espace libre entre ces éléments (qui se placeront donc au bord du container) ou autour de ces éléments (générant ainsi un espace égal entre chaque élément et le bord du container)</p>
+			<p>On peut ainsi les placer au début, à la fin ou au milieu de cet axe. De plus, "justify-content" nous aide à disposer de l'espace restant. Il est en effet possible de répartir l'espace libre entre ces éléments (qui se placeront donc au bord du container) ou autour de ces éléments (générant ainsi un espace égal entre chaque élément et le bord du container)</p>
 
 			<div class="container">
 
@@ -125,13 +176,84 @@
 
 		<!-- end justify-content -->
 
+
+
+		<!-- align-content -->
+
+		<div id="align-content">
+
+			<h2>align-content</h2>
+			<p>align-content peut être vu comme l'équivalent de "justify-content" mais cette fois-ci sur l'axe secondaire du container. Ces deux propriétés acceptent donc les mêmes valeurs.</p>
+			<div class="container">
+				<div class="code">
+					<p>.container {</p>
+					<p>display: flex;</p>
+					<p>align-content : 	<button name="align-content" type="button" class="btn" >flex-start</button> |
+										<button name="align-content" type="button" class="btn" >flex-end</button> |
+										<button name="align-content" type="button" class="btn" >center</button> |
+										<button name="align-content" type="button" class="btn" >space-between</button> |
+										<button name="align-content" type="button" class="btn" >space-around</button> |
+										<button name="align-content" type="button" class="btn" >stretch</button> ;
+					</p>
+					<p>}</p>
+				</div>
+
+				<div class="exemple" id="ex9">
+
+					<div class="rectangle">
+						<p class="letter">A</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">B</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">C</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">D</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">E</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">F</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">G</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">H</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">I</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">J</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">K</p>
+					</div>
+					<div class="rectangle">
+						<p class="letter">L</p>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- end align-content -->
+
+
+
 		<!-- align-items -->
 
 		<div id="align-items">
 
 			<h2>align-items</h2>
 			<p>Tout comme "justify-content", la propriété "align-items" permet de disposer les éléments comme on le désire, mais sur l'axe secondaire cette fois-ci.</p>
-			<p>Vous remarquerez que les valeurs ne sont pas toutes les mêmes, on dispose cette fois-ci des valeurs baseline et stretch (qui étire les éléments afin qu'ils remplissent tout l'espace disponible).</p>
+			<p>Vous remarquerez que les valeurs ne sont pas toutes les mêmes, on dispose cette fois-ci des valeurs baseline (qui aligne le contenu texte des éléments) et stretch (qui étire les éléments afin qu'ils remplissent tout l'espace disponible).</p>
 
 			<div class="container">
 
@@ -173,142 +295,8 @@
 
 		<!-- end align-items -->
 
-		<!-- flex-direction -->
 
-		<div id="flex-direction">
-
-			<h2>flex-direction</h2>
-			<p>flex-direction est, en général, la première propriété à définir afin de choisir l'axe principal que les éléments devront suivre par défaut dans le container visé.</p>
-			<div class="container">
-
-				<div class="code">
-					<p>.container {</p>
-					<p>display: flex;</p>
-					<p>flex-direction: 	<button name="flex-direction" type="button" class="btn" >row</button> |
-										<button name="flex-direction" type="button" class="btn" >row-reverse</button> |
-										<button name="flex-direction" type="button" class="btn" >column</button> |
-										<button name="flex-direction" type="button" class="btn" >column-reverse</button> ;
-					</p>
-					<p>}</p>
-				</div>
-
-				<div class="exemple" id="ex4">
-
-					<div class="rectangle">
-						<p class="letter">A</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">B</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">C</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">D</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">E</p>
-					</div>
-					
-				</div>
-
-			</div>
-
-		</div>
-
-		<!-- end flex-direction -->
-
-		<!-- order -->
-
-		<div id="order">
-
-			<h2>order</h2>
-			<p>Habituellement, les items sont affichés dans l'ordre dans lequel ils sont intégrés au fichier html, il est donc possible de prévoir leur position selon les propriétés appliquées au flexcontainer.</p>
-			<p>Avec "order", il vous sera maintenant possible de changer l'ordre dans lequel les items apparaissent dans un flex container sans toucher au fichier html.</p>
-			<div class="container">
-
-				<div class="code">
-					<p>.main-item {</p>
-					<p>order : 	<button name="order" type="button" class="btn" >-1</button> |
-								<button name="order" type="button" class="btn" >2</button> |
-								<button name="order" type="button" class="btn" >3</button> |
-								<button name="order" type="button" class="btn" >4</button> ;</p>
-					<p>}</p>
-				</div>
-
-				<div class="exemple" id="ex5">
-
-					<div class="rectangle" id="order-item1">
-						<p class="letter">0</p>
-					</div>
-					<div class="rectangle" id="order-item2">
-						<p class="letter">2</p>
-					</div>
-					<div class="rectangle" id="order-item3">
-						<p class="letter">2</p>
-					</div>
-					<div class="rectangle" id="order-item4">
-						<p class="letter">4</p>
-					</div>
-					<div class="rectangle" id="main-order-item">
-						<p class="letter">0</p>
-					</div>
-					
-				</div>
-
-			</div>
-
-		</div>
-
-		<!-- end order -->
-
-		<!-- align-self -->
-
-		<div id="align-self">
-
-			<h2>align-self</h2>
-			<p>Cette propriété, placée sur un item, permet d'outrepasser la règle définie par align-items dans son parent. Les mêmes valeurs que pour justify-content sont donc acceptées mais ne s'appliqueront qu'à l'item concerné sans pour autant casser le flow défini dans le container.</p>
-			<div class="container">
-
-				<div class="code">
-					<p>.item {</p>
-					<p>display: flex;</p>
-					<p>align-self : <button name="align-self" type="button" class="btn" >flex-start</button> |
-									<button name="align-self" type="button" class="btn" >flex-end</button> |
-									<button name="align-self" type="button" class="btn" >center</button> |
-									<button name="align-self" type="button" class="btn" >baseline</button> |
-									<button name="align-self" type="button" class="btn" >stretch</button> ;
-					</p>
-					<p>}</p>
-				</div>
-
-				<div class="exemple" id="ex6">
-
-					<div class="rectangle">
-						<p class="letter">A</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">B</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">C</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">D</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">E</p>
-					</div>
-					
-				</div>
-
-			</div>
-
-		</div>	
-
-		<!-- end align-self -->
-
-		<!-- flex-wrap -->
+<!-- flex-wrap -->
 
 		<div id="flex-wrap">
 
@@ -417,27 +405,31 @@
 
 		<!-- end flex-flow -->
 
-		<!-- align-content -->
+		<div class="warning">
+		<h2><strong>Attention</strong>,</h2><p> les prochaines propriétés sont à appliquer <strong>directement sur l'item</strong> et non plus sur son container.</p>
+		<p>Il ne faudra pas oublier d'appliquer tout de même un "display : flex;" sur le container afin "d'activer" les propriétés sur les items <strong>dans</strong> ce container.</p>
+		</div>
+		<!-- align-self -->
 
-		<div id="align-content">
+		<div id="align-self">
 
-			<h2>align-content</h2>
-			<p>align-content peut être vu comme l'équivalent de "justify-content" mais cette fois-ci sur l'axe secondaire du container. Ces deux propriétés acceptent donc les mêmes valeurs.</p>
+			<h2>align-self</h2>
+			<p>Cette propriété, placée sur un item, permet d'outrepasser la règle définie par align-items dans son parent. Les mêmes valeurs que pour justify-content sont donc acceptées mais ne s'appliqueront qu'à l'item concerné sans pour autant casser le flow défini dans le container.</p>
 			<div class="container">
+
 				<div class="code">
-					<p>.container {</p>
+					<p>.item {</p>
 					<p>display: flex;</p>
-					<p>align-content : 	<button name="align-content" type="button" class="btn" >flex-start</button> |
-										<button name="align-content" type="button" class="btn" >flex-end</button> |
-										<button name="align-content" type="button" class="btn" >center</button> |
-										<button name="align-content" type="button" class="btn" >space-between</button> |
-										<button name="align-content" type="button" class="btn" >space-around</button> |
-										<button name="align-content" type="button" class="btn" >stretch</button> ;
+					<p>align-self : <button name="align-self" type="button" class="btn" >flex-start</button> |
+									<button name="align-self" type="button" class="btn" >flex-end</button> |
+									<button name="align-self" type="button" class="btn" >center</button> |
+									<button name="align-self" type="button" class="btn" >baseline</button> |
+									<button name="align-self" type="button" class="btn" >stretch</button> ;
 					</p>
 					<p>}</p>
 				</div>
 
-				<div class="exemple" id="ex9">
+				<div class="exemple" id="ex6">
 
 					<div class="rectangle">
 						<p class="letter">A</p>
@@ -454,26 +446,53 @@
 					<div class="rectangle">
 						<p class="letter">E</p>
 					</div>
-					<div class="rectangle">
-						<p class="letter">F</p>
+					
+				</div>
+
+			</div>
+
+		</div>	
+
+		<!-- end align-self -->
+
+
+
+
+		
+		<!-- order -->
+
+		<div id="order">
+
+			<h2>order</h2>
+			<p>Habituellement, les items sont affichés dans l'ordre dans lequel ils sont intégrés au fichier html, il est donc possible de prévoir leur position selon les propriétés appliquées au flexcontainer.</p>
+			<p>Avec "order", il vous sera maintenant possible de changer l'ordre dans lequel les items apparaissent dans un flex container sans toucher au fichier html.</p>
+			<div class="container">
+
+				<div class="code">
+					<p>.main-item {</p>
+					<p>order : 	<button name="order" type="button" class="btn" >-1</button> |
+								<button name="order" type="button" class="btn" >2</button> |
+								<button name="order" type="button" class="btn" >3</button> |
+								<button name="order" type="button" class="btn" >4</button> ;</p>
+					<p>}</p>
+				</div>
+
+				<div class="exemple" id="ex5">
+
+					<div class="rectangle" id="order-item1">
+						<p class="letter">0</p>
 					</div>
-					<div class="rectangle">
-						<p class="letter">G</p>
+					<div class="rectangle" id="order-item2">
+						<p class="letter">2</p>
 					</div>
-					<div class="rectangle">
-						<p class="letter">H</p>
+					<div class="rectangle" id="order-item3">
+						<p class="letter">2</p>
 					</div>
-					<div class="rectangle">
-						<p class="letter">I</p>
+					<div class="rectangle" id="order-item4">
+						<p class="letter">4</p>
 					</div>
-					<div class="rectangle">
-						<p class="letter">J</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">K</p>
-					</div>
-					<div class="rectangle">
-						<p class="letter">L</p>
+					<div class="rectangle" id="main-order-item">
+						<p class="letter">0</p>
 					</div>
 					
 				</div>
@@ -482,20 +501,26 @@
 
 		</div>
 
-		<!-- end align-content -->
+		<!-- end order -->
+
+
+
+
+
+		
 
 	</main>
 
 	<!-- end main content -->
 
 	<footer class="footer"> 
-		<h4>Sources</h4>
+		<h4>Sources :</h4>
 		<ul>
 			<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com</a></li>
 			<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout">mozilla.org</a></li>
 			<li><a href="https://la-cascade.io/flexbox-guide-complet/">la-cascade.io</a></li>
 		</ul>
-		<h4> Quelques petits jeux sympas pour découvrir Flexbox Layout</h4>
+		<h4> Quelques petits jeux sympas pour découvrir Flexbox Layout :</h4>
 		<ul>
 			<li><a href="http://flexboxfroggy.com/#fr">Froggy Flex</a></li>
 			<li><a href="http://www.flexboxdefense.com/">Flexbox Defense</a></li>
