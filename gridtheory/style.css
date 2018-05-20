@@ -20,8 +20,12 @@
 
 }
 
-h1{
+.intro{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
+
 
 /* container général contenant tout la grille (il y a la navbar au dessus et le footer en dessous,
 je n'ai pas jugé pratique de les inclure dans la grille comme ça je ne fais qu'une ligne)*/
@@ -92,9 +96,13 @@ main{
 }
 
 footer {
+	color: white;
 	background-color : #272822;
 }
-
+footer h4{
+	padding-left: 10px;
+	padding-top: 10px;
+}
 
 
 footer ul {
@@ -112,5 +120,16 @@ footer ul li {
 
 footer ul li a{
 	text-decoration: none;
-	color: white;
+	color:#23c3ef;
+}
+
+
+@media only screen and (max-device-width : 700px) {
+	.navbar-menu ul{
+	flex-direction: column;
+	}
+	footer ul {
+		flex-direction: column;
+	}
+
 }
