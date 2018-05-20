@@ -44,21 +44,26 @@
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
-					<p>display: grid | none ;</p>
+					<p>display: <button name="display" type="button" class="btn" >grid</button> | 
+								<button name="display" type="button" class="btn" >block</button> ;</p>
+					<p>grid-template-columns: 1fr 1fr 1fr 1fr;</p>
+					<p>grid-template-rows: 1fr 1fr 1fr;</p>
 					<p>}</p>
-					<br>
-					<br>
+					
 				</div>
 				<div class="example">
-					<div class="example-grid-item"></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div>A</div>
+					<div>B</div>
+					<div>C</div>
+					<div>D</div>
+					<div>E</div>
+					<div>F</div>
+					<div>G</div>
+					<div>H</div>
+					<div>I</div>
+					<div>J</div>
+					<div>K</div>
+					<div>L</div>
 				</div>
 			</div>
 
@@ -75,21 +80,30 @@
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
-					<p>grid-template-columns: none | line name | track size | auto ;</p>
+					<p>display: grid;</p>
+					<p>grid-template-columns: 
+						<button name="grid-template-columns" type="button" class="btn" >40% 60%</button> | 
+						<button name="grid-template-columns" type="button" class="btn" >repeat(2,50%)</button> | <button name="grid-template-columns" type="button" class="btn" >80px 4em auto</button> | 
+						<button name="grid-template-columns" type="button" class="btn" >1fr 3fr</button> | 
+						<button name="grid-template-columns" type="button" class="btn" >1fr 1fr 1fr 1fr</button> ;
+					</p>
+					<p>grid-template-rows: 1fr 1fr 1fr;</p>
 					<p>}</p>
-					<br>
-					<br>
+					
 				</div>
 				<div class="example">
-					<div class="example-grid-item"></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div>A</div>
+					<div>B</div>
+					<div>C</div>
+					<div>D</div>
+					<div>E</div>
+					<div>F</div>
+					<div>G</div>
+					<div>H</div>
+					<div>I</div>
+					<div>J</div>
+					<div>K</div>
+					<div>L</div>
 				</div>
 			</div>
 
@@ -109,21 +123,30 @@
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
-					<p>grid-template-rows: none | line name | track size | auto ;</p>
+					<p>display: grid;</p>
+					<p>grid-template-columns: 1fr 1fr 1fr 1fr;</p>
+					<p>grid-template-rows: 
+						<button name="grid-template-rows" type="button" class="btn" >20% 30% 50%</button> | 
+						<button name="grid-template-rows" type="button" class="btn" >150px repeat(2,auto)</button> | <button name="grid-template-rows" type="button" class="btn" >15px 4em auto</button> | 
+						<button name="grid-template-rows" type="button" class="btn" >2fr 3fr 1fr</button> | 
+						<button name="grid-template-rows" type="button" class="btn" >1fr 1fr 1fr</button> ;</p>
+
 					<p>}</p>
-					<br>
-					<br>
+					
 				</div>
 				<div class="example">
-					<div class="example-grid-item"></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div>A</div>
+					<div>B</div>
+					<div>C</div>
+					<div>D</div>
+					<div>E</div>
+					<div>F</div>
+					<div>G</div>
+					<div>H</div>
+					<div>I</div>
+					<div>J</div>
+					<div>K</div>
+					<div>L</div>
 				</div>
 			</div>
 
@@ -141,15 +164,17 @@
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
+					<p>display: grid;</p>
 					<p>grid-template-areas: none | string ;</p>
 					<p>}</p>
-					<br>
-					<br>
-					<br>
+					
 					
 				</div>
 				<div class="example">
 					<div class="example-grid-item"></div>
+					<div></div>
+					<div></div>
+					<div></div>
 					<div></div>
 					<div></div>
 					<div></div>
@@ -171,21 +196,27 @@
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
+					<p>display: grid;</p>
+					<p>grid-template-columns: 1fr 1fr 1fr 1fr;</p>
+					<p>grid-template-rows: 1fr 1fr 1fr;</p>
 					<p>row-gap: value ;</p>
 					<p>column-gap: value ;</p>
 					<p>gap: value ;</p>
 					<p>}</p>
 				</div>
 				<div class="example">
-					<div class="example-grid-item"></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div class="example-grid-item">A</div>
+					<div>B</div>
+					<div>C</div>
+					<div>D</div>
+					<div>E</div>
+					<div>F</div>
+					<div>G</div>
+					<div>H</div>
+					<div>I</div>
+					<div>J</div>
+					<div>K</div>
+					<div>L</div>
 				</div>
 			</div>
 			
@@ -221,6 +252,9 @@
 					<div></div>
 					<div></div>
 					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
 			</div>
 
@@ -238,6 +272,9 @@
 				</div>
 				<div class="example">
 					<div class="example-grid-item"></div>
+					<div></div>
+					<div></div>
+					<div></div>
 					<div></div>
 					<div></div>
 					<div></div>
@@ -274,6 +311,9 @@
 					<div></div>
 					<div></div>
 					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
 			</div>		
 		</main>
@@ -300,6 +340,6 @@
 
 
 	<script src="../scripts/jquery-3.3.1.min.js"></script>
-	<script src="../scripts/myscript.js"></script>
+	<script src="../scripts/scriptgrid.js"></script>
 </body>
 </html>

@@ -80,7 +80,7 @@ main{
 .example{
 	width:33%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 
 }
@@ -88,11 +88,24 @@ main{
 
 
 .example div{
-	border: solid;
+	border: solid 1px;
+	margin-bottom: -1px;
+	margin-left: -1px;
+	display :flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .example-grid-item{
 	background-color: #872657;
+}
+
+
+button{
+	background-color: transparent;
+	color: white;
+	border-width:1px;
+	margin-bottom: 2px;
 }
 
 footer {
