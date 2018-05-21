@@ -1,5 +1,7 @@
 .navbar{
 	padding-top: 5px;
+	padding-right: 50px;
+	padding-left: 50px;
 	background-color: #272822;
 }
 
@@ -17,7 +19,6 @@
 
 .navbar-menu ul li{
 	padding-bottom: 10px;
-
 }
 
 .intro{
