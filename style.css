@@ -1,5 +1,5 @@
 body {
-	font-family: sans-serif;
+	font-family: Lato, Helvetica;
 	display : grid;
 	grid-template-columns: 10% auto 10% ;
 	grid-template-rows: 5% auto 5% ;
@@ -89,4 +89,14 @@ ul {
 	flex-direction : row;
 	justify-content: space-around;
 	list-style: none;
+}
+
+@media only screen and (max-device-width : 700px) {
+	.navbar-menu ul{
+	flex-direction: column;
+	}
+	footer ul {
+		flex-direction: column;
+	}
+
 }
