@@ -1,4 +1,5 @@
 body {
+	font-family: Lato, Helvetica;
 	display : grid;
 	grid-template-columns: 10% auto 10% ;
 	grid-template-rows: 5% auto 5% ;
@@ -39,6 +40,9 @@ a{
 	color:#23c3ef;
 }
 
+h1{
+	text-align: center;
+}
 span{
 	color: red;
 }
@@ -161,6 +165,6 @@ button{
 
 
 .warning{
-	background-color: #FF415DFF;
+	background-color: red;
 }
 

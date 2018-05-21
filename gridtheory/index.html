@@ -6,23 +6,26 @@
 	<title>Grid Course</title>
 </head>
 <body>
-	<nav class="navbar">
-		<div class="navbar-menu">
-			<ul>
-				<li><a href="../index.html">Homepage</a></li>
-				<li><a href="../flextheory/index.html">Flex Theory</a></li>
-				<li><a href="">Flex Practice</a></li>
-				<li><a href="index.html">Grid Theory</a></li>
-				<li><a href="">Grid Practice</a></li>
-				<li><a href="../flex&grid/index.html">When use Flex or Grid ?</a></li>
-				<li><a href="">Overall Practice</a></li>
-			</ul>
-		</div>	
-	</nav>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-menu">
+				<ul>
+					<li><a href="../index.html">Homepage</a></li>
+					<li><a href="../flextheory/index.html">Flex Theory</a></li>
+					<!-- <li><a href="">Flex Practice</a></li> -->
+					<li><a href="index.html">Grid Theory</a></li>
+					<!-- <li><a href="">Grid Practice</a></li> -->
+					<li><a href="../flex&grid/index.html">When use Flex or Grid ?</a></li>
+					<!-- <li><a href="">Overall Practice</a></li> -->
+				</ul>
+			</div>	
+		</nav>
+	</header>
 	<div class="intro">
 		<h1>The Grid Theory</h1>
-		<p>Grid est un ensemble de propriétés CSS qui permet la disposition d'éléments dans une grille sur une page web. Les premières spécifications de CSS Grid ont été proposées par Microsoft en 2011. Comme son nom l'indique, on parle d'une grille en deux dimensions. Les lignes et les colonnes ainsi que leur comportement sont définies entièrement en CSS.</p>
+		<p>Grid est un ensemble de propriétés CSS qui permet la disposition d'éléments dans une grille sur une page web. Les premières spécifications de CSS Grid ont été proposées par Microsoft en 2011. Comme son nom l'indique, on parle d'une grille en deux dimensions. Les lignes et les colonnes ainsi que leur comportement sont définis entièrement en CSS.</p>
 	</div>
+	<hr / class="introcutter">
 	<div class="container"> <!-- the grid container -->
 
 	<!-- the two border columns -->
@@ -38,8 +41,8 @@
 				<!-- display   -->
 				
 
-
-
+			<h1>1 Définir une grille</h1>
+			<hr />
 			<h2>display</h2>
 			<p>La propriété "display" permet de définir un container comme un grid container, c'est à dire qu'il sera possible d'utiliser grid à l'intérieur de ce container pour disposer des différents éléments comme bon nous semble.</p>
 			<p>Pour voir le placement par défaut de "grid", il suffit de créer une grille avec un ensemble d'objets. Sans fournir aucune information de placement, ces objets se placeront chacun sur une cellule de la grille.</p>
@@ -79,8 +82,8 @@
 
 
 			<h2>grid-template-columns</h2>
-			<p>"grid-template-columns" permet de crée des colonnes.</p>
-			<p>On peut choisir la largeur de chacune de nos colonnes (definis par des px (pixels), % (poucentage), fr (fraction) ou auto (automatic) ). Ainsi 1fr 1fr 1fr ou repeat(3, 1fr) permettent d'obtenir une grille de 3 colonnes faisant chacune 1/3 de l'espace disponible restant (après calcul des margins et paddings).  </p>
+			<p>"grid-template-columns" permet de créer des colonnes.</p>
+			<p>On peut choisir la largeur de chacunes de nos colonnes (definie par des px (pixels), % (poucentages), fr (fractions) ou auto (automatic) ). Ainsi 1fr 1fr 1fr ou repeat(3, 1fr) permettent d'obtenir une grille de 3 colonnes faisant chacune 1/3 de l'espace disponible restant (après calcul des marges et paddings).  </p>
 
 			<div class="section">
 				<div class="codeblock">
@@ -126,7 +129,7 @@
 
 			<h2>grid-template-rows</h2>
 
-			<p>La propriété "grid-template-rows" permet de créer des lignes dans lesquelles on pourra placer des éléments.</p>
+			<p>Comme "grid-template-columns" mais pour les lignes cette fois, la propriété "grid-template-rows" permet de créer des lignes dans lesquelles on pourra placer des éléments.</p>
 			
 			<div class="section">
 				<div class="codeblock">
@@ -169,7 +172,7 @@
 
 
 			<h2>grid-template-areas</h2>
-			<p>La propriété "grid-template-areas" permet de définir des zones de grille nommées comme on le souhaite. Chaque cellule a un nom qui peut être attribué en css.</p>
+			<p>La propriété "grid-template-areas" permet de définir des zones de grille nommées comme on le souhaite. Chaque cellule a un nom qui peut être attribué à un élément en css.</p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
@@ -206,20 +209,29 @@
 
 
 			<h2>gaps</h2>
-			<p>"gaps" va nous servir à définir des espaces entre les cellules que comporte la grille, ca peut s'avérer utile si l'on veux aérer notre page. </p>
+			<p>"gaps" va nous servir à définir des espaces entre les cellules que comporte la grille, ce qui peut s'avérer utile si l'on veux aérer notre page. </p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
 					<p>display: grid;</p>
 					<p>grid-template-columns: 1fr 1fr 1fr 1fr;</p>
 					<p>grid-template-rows: 1fr 1fr 1fr;</p>
-					<p>row-gap: value ;</p>
-					<p>column-gap: value ;</p>
-					<p>gap: value ;</p>
+					<p>row-gap: <button name="row-gap" type="button" class="btn" >0</button> | 
+								<button name="row-gap" type="button" class="btn" >1ch</button> |
+								<button name="row-gap" type="button" class="btn" >1em</button> |
+								<button name="row-gap" type="button" class="btn" >10px</button> ;</p>
+					<p>column-gap: 	<button name="column-gap" type="button" class="btn" >10px</button> | 
+									<button name="column-gap" type="button" class="btn" >normal</button> |
+									<button name="column-gap" type="button" class="btn" >10%</button> |
+									<button name="column-gap" type="button" class="btn" >2rem</button> ;</p>
+					<p>gap: <button name="gap" type="button" class="btn" >0 10px</button> | 
+							<button name="gap" type="button" class="btn" >1ch normal</button> |
+							<button name="gap" type="button" class="btn" >1em 10%</button> |
+							<button name="gap" type="button" class="btn" >10px 2rem</button> ;</p>
 					<p>}</p>
 				</div>
 				<div class="example">
-					<div class="example-grid-item">A</div>
+					<div>A</div>
 					<div>B</div>
 					<div>C</div>
 					<div>D</div>
@@ -238,16 +250,21 @@
 
 <!--   Properties on items -->
 
-			<h1>Placing Items</h1>
-			<p>Be careful with those, only use to define what we call a gridcell</p>
-			<p>An automatic placement for items that aren't placed</p>
+			<h1>2 Placer nos Div dans la grille</h1>
 
+			<p><span>Attention</span> les propriétés qui suivent sont faites pour affecter les divisions que vous désirez placer dans une grille que vous avez définie auparavant.</p>
+			<p>Les éléments auxquels on ne donne pas d'ordres se placeront d'eux-même dans la grille.</p>
 
+			<hr />
 
 <!--      Grid Row -->
 
 
 			<h2>grid-row-start / grid-row-end / grid-row</h2>
+			<p>"grid-row-start" définit la ligne sur laquelle la division va commencer. Son antagoniste, "grid-row-end" permet de choisir là où elle devra s'arrêter.</p>
+			<p>"grid-row" permet de définir ces deux valeurs dans une seule propriété en les séparant d'un "/".</p>
+			<p>Il est bon de savoir que plutôt que de définir un "grid-row-end" en seconde valeur de "grid-row", il est possible de simplement lui indiquer sur combien de ligne la division doit se positionner à l'aide de "span".</p>
+			<p>"grid-row : 1 / span 3" mettra la division concernée sur la première ligne et la fera courrir sur trois lignes.</p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.item {</p>
@@ -285,6 +302,8 @@
 
 
 			<h2>grid-column-start / grid-column-end / grid-column</h2>
+			<p>"grid-column-start" et "grid-column-end" fonctionnent exactement de la même manière que pour les lignes.</p>
+			<p>Ainsi, comme pour les lignes, il est possible de fusionner les deux propriétés pour n'utiliser que "grid-column" et définir en une seule ligne le début et la fin de l'emplacement que doit prendre la division dans la grille.</p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.item {</p>
@@ -324,6 +343,7 @@
 
 
 			<h2>grid-area</h2>
+			<p>"grid-area" permet de combiner en une seule ligne "grid-row" et "grid-column".<br> "grid-area" prend donc 4 valeurs en entrée qui doivent toutes être séparées par des "/"</p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.item {</p>
@@ -363,7 +383,7 @@
 			<li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout">mozilla.org</a></li>
 			<li><a href="https://la-cascade.io/flexbox-guide-complet/">la-cascade.io</a></li>
 		</ul>
-		<h4>Un petit jeu sympa pour découvrir CSS-Grid</h4>
+		<h4>Un petit jeu sympa pour se familiariser avec CSS-Grid</h4>
 		<ul>
 			<li><a href="http://cssgridgarden.com/#fr">Grid Garden</a></li>
 			<li><a href=""></a>

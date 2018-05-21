@@ -1,5 +1,12 @@
+body{
+	font-family: Lato, Helvetica;
+}
+
+
 .navbar{
 	padding-top: 5px;
+	padding-right: 50px;
+	padding-left: 50px;
 	background-color: #272822;
 }
 
@@ -17,16 +24,20 @@
 
 .navbar-menu ul li{
 	padding-bottom: 10px;
-
 }
 
 .intro{
+	margin-left:10%;
+	margin-right: 10%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
-
+.introcutter{
+	margin-left: 10%;
+	margin-right: 10%;
+}
 /* container général contenant tout la grille (il y a la navbar au dessus et le footer en dessous,
 je n'ai pas jugé pratique de les inclure dans la grille comme ça je ne fais qu'une ligne)*/
 
@@ -66,6 +77,10 @@ main{
 	justify-content: space-between;
 }
 
+main p span{
+	font-weight: bold;
+	color: red;
+}
 
 
 .codeblock{
