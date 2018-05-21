@@ -43,7 +43,7 @@
 }
 
 .gridcell1{
-	background-color: #231891;
+	background-color:#A71553;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -52,7 +52,7 @@
 	grid-column:1 / span 2;
 }
 .gridcell2{
-	background-color: green;
+	background-color: #F1144A;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -60,7 +60,7 @@
 	grid-column:3;
 }
 .gridcell3{
-	background-color: #D8CC2C;
+	background-color: #D3031D;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,7 +69,7 @@
 
 }
 .gridcell4{
-	background-color: #159E7F;
+	background-color: #DF6413;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -78,7 +78,7 @@
 
 }
 .gridcell5{
-	background-color: #6F1474;
+	background-color:#E2BA00;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: center;
@@ -87,6 +87,7 @@
 
 }
 .gridcell6{
+	background-color: #548710;
 	display: flex;
 	grid-row: 4 / 5;
 	grid-column: 1 / 3;
@@ -94,6 +95,7 @@
 
 }
 .gridcell7{
+	background-color:#166B2A;
 	display: flex;
 	justify-content: flex-end;
 	grid-row: 5 / 6;
@@ -101,6 +103,7 @@
 
 }
 .gridcell8{
+	background-color: #006078;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -109,7 +112,7 @@
 
 }
 .gridcell9{
-	background-color: #E62E2E;
+	background-color: #1685BD;
 	display: flex;
 	justify-content: center;
 	grid-row: 6 / span 1;
@@ -119,7 +122,7 @@
 }
 
 .gridcell10{
-	background-color: #E62E2E;
+	background-color: #1685BD;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -130,6 +133,7 @@
 }
 
 .gridcell11{
+	background-color: #9071B4;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
