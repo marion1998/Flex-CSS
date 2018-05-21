@@ -84,11 +84,32 @@ h1{
 	padding-top: 200px;
 }
 
-ul {
+footer {
+	color: white;
+	background-color : #272822;
+}
+footer h4{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+footer ul {
 	display : flex;
 	flex-direction : row;
 	justify-content: space-around;
 	list-style: none;
+}
+
+footer ul li {
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+footer ul li a{
+	text-decoration: none;
+	color:#23c3ef;
 }
 
 @media only screen and (max-device-width : 700px) {
