@@ -21,7 +21,7 @@
 	</nav>
 	<div class="intro">
 		<h1>The Grid Theory</h1>
-		<p>Grid est un ensemble de propriétés CSS qui permet la disposition d'éléments dans une grille sur une page web. Les premières spécifications de CSS Grid ont été proposées par Microsoft en 2011. Comme son nom l'indique, on parle d'une grille en deux dimensions. Les lignes et les colonnes ainsi que leur comportement sont définis entièrement en CSS.</p>
+		<p>Grid est un ensemble de propriétés CSS qui permet la disposition d'éléments dans une grille sur une page web. Les premières spécifications de CSS Grid ont été proposées par Microsoft en 2011. Comme son nom l'indique, on parle d'une grille en deux dimensions. Les lignes et les colonnes ainsi que leur comportement sont définies entièrement en CSS.</p>
 	</div>
 	<div class="container"> <!-- the grid container -->
 
@@ -42,7 +42,7 @@
 
 			<h2>display</h2>
 			<p>La propriété "display" permet de définir un container comme un grid container, c'est à dire qu'il sera possible d'utiliser grid à l'intérieur de ce container pour disposer des différents éléments comme bon nous semble.</p>
-			<p>Pour voir le placement par défaut de "grid", il suffit de créer une grille avec un ensemble d'objets. Sans fournir aucune information de placement, ces objets se placeront chacun sur une cellule de la grille</p>
+			<p>Pour voir le placement par défaut de "grid", il suffit de créer une grille avec un ensemble d'objets. Sans fournir aucune information de placement, ces objets se placeront chacun sur une cellule de la grille.</p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.container</p>
@@ -169,7 +169,7 @@
 
 
 			<h2>grid-template-areas</h2>
-			<p>La propriété "grid-template-areas" permet de définir des zones de grille nommées de la façon que l'on souhaite. Chaque cellule a un nom , qui peut être attribué , en css.</p>
+			<p>La propriété "grid-template-areas" permet de définir des zones de grille nommées comme on le souhaite. Chaque cellule a un nom qui peut être attribué en css.</p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
@@ -206,7 +206,7 @@
 
 
 			<h2>gaps</h2>
-			<p>"gaps" va nous servir a definir des espaces entre les cellules que comporte la grille, ca peut s'averer utile si l'on veux aérée notre page. </p>
+			<p>"gaps" va nous servir à définir des espaces entre les cellules que comporte la grille, ca peut s'avérer utile si l'on veux aérer notre page. </p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
@@ -247,13 +247,22 @@
 <!--      Grid Row -->
 
 
-			<h2>grid-row</h2>
+			<h2>grid-row-start / grid-row-end / grid-row</h2>
 			<div class="section">
 				<div class="codeblock">
 					<p>.item {</p>
-					<p>grid-row-start : line name | line number ;</p>
-					<p>grid-row-end : line name | line number ;</p>
-					<p>grid-row-: ;</p>
+					<p>grid-row-start : <button name="grid-row-start" type="button" class="btn" >1</button> | 
+						<button name="grid-row-start" type="button" class="btn" >2</button> | 
+						<button name="grid-row-start" type="button" class="btn" >3</button> | 
+						<button name="grid-row-start" type="button" class="btn" >4</button>;</p>
+					<p>grid-row-end : <button name="grid-row-end" type="button" class="btn" >1</button> | 
+						<button name="grid-row-end" type="button" class="btn" >2</button> | 
+						<button name="grid-row-end" type="button" class="btn" >3</button> | 
+						<button name="grid-row-end" type="button" class="btn" >4</button>;</p>
+					<p>grid-row : <button name="grid-row" type="button" class="btn" >2/3</button> | 
+						<button name="grid-row" type="button" class="btn" >1/4</button> | 
+						<button name="grid-row" type="button" class="btn" >3/4</button> | 
+						<button name="grid-row" type="button" class="btn" >-1/-3</button></p>
 					<p>}</p>
 				</div>
 				<div class="example">
@@ -275,13 +284,22 @@
 <!-- Grid Column Start  -->
 
 
-			<h2>grid-column</h2>
+			<h2>grid-column-start / grid-column-end / grid-column</h2>
 			<div class="section">
 				<div class="codeblock">
 					<p>.item {</p>
-					<p>grid-column-start : line name | line number ;</p>
-					<p>grid-column-end : line name | line number ;</p>
-					<p>grid-column: ;</p>
+					<p>grid-column-start : <button name="grid-column-start" type="button" class="btn" >1</button> | 
+						<button name="grid-column-start" type="button" class="btn" >2</button> | 
+						<button name="grid-column-start" type="button" class="btn" >3</button> | 
+						<button name="grid-column-start" type="button" class="btn" >4</button>;</p>
+					<p>grid-column-end : <button name="grid-column-end" type="button" class="btn" >1</button> | 
+						<button name="grid-column-end" type="button" class="btn" >2</button> | 
+						<button name="grid-column-end" type="button" class="btn" >3</button> | 
+						<button name="grid-column-end" type="button" class="btn" >4</button>;</p>
+					<p>grid-column : <button name="grid-column" type="button" class="btn" >2/3</button> | 
+						<button name="grid-column" type="button" class="btn" >1/4</button> | 
+						<button name="grid-column" type="button" class="btn" >3/5</button> | 
+						<button name="grid-column" type="button" class="btn" >5/1</button></p>
 					<p>}</p>
 				</div>
 				<div class="example">
@@ -301,18 +319,18 @@
 			</div>
 
 
-<!-- 		Auto Placement   -->
+<!-- 		grid-area   -->
 
 
 
-			<h2>Auto Placement - grid-auto-flow</h2>
-			<p>An automatic placement for items that aren't placed</p>
+			<h2>grid-area</h2>
 			<div class="section">
 				<div class="codeblock">
 					<p>.item {</p>
-					<p>grid-auto-flow : row ;</p>
-					<p>grid-auto-flow : column ;</p>
-					<p>grid-auto-flow : dense ;</p>
+					<p>grid-area : <button name="grid-area" type="button" class="btn" >1/1/3/4</button> | 
+						<button name="grid-area" type="button" class="btn" >2/2/4/4</button> | 
+						<button name="grid-area" type="button" class="btn" >2/3/4/5</button> | 
+						<button name="grid-area" type="button" class="btn" >1/2/4/5</button> ;</p>
 					<p>}</p>
 				</div>
 				<div class="example">
