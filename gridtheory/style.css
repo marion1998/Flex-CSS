@@ -100,6 +100,21 @@ main{
 	background-color: #872657;
 }
 
+/* grid-template-areas Section */
+.example__grid-item-A{
+	grid-area: A;
+	background-color: lightskyblue;
+}
+
+.example__grid-item-B{
+	grid-area: B;
+	background-color: lightcoral;
+}
+
+.example__grid-item-C{
+	grid-area: C;
+	background-color: lightseagreen;
+}
 
 button{
 	background-color: transparent;
