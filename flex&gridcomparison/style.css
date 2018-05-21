@@ -98,12 +98,26 @@
 }
 .gridcell9{
 	display: flex;
-	grid-row: 6 / span 3;
-	grid-column: 1 / span 3;
+	justify-content: center;
+	grid-row: 6 / span 1;
+	grid-column: 1 / span 5;
+	border-bottom:none;
 
 }
+
 .gridcell10{
 	display: flex;
+	justify-content: space-around;
+	grid-row: 7 / span 2;
+	grid-column: 1 / span 3;
+	border-top: none;
+
+}
+
+.gridcell11{
+	display: flex;
+	grid-row: 7 / span 2;
+	grid-column: 4 / span 2;
 
 }
 
