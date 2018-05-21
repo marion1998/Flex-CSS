@@ -46,8 +46,8 @@
 			<div class="section">
 				<div class="codeblock">
 					<p>.container</p>
-					<p>display: <bufile:///home/zurcher/Documents/projetflex/Flex-CSS/gridtheory/style.csstton name="display" type="button" class="btn" >grid</button> | 
-								<bufile:///home/zurcher/Documents/projetflex/Flex-CSS/gridtheory/style.csstton name="display" type="button" class="btn" >block</button> ;</p>
+					<p>display: <button name="display" type="button" class="btn" >grid</button> | 
+								<button name="display" type="button" class="btn" >block</button> ;</p>
 					<p>grid-template-columns: 1fr 1fr 1fr 1fr;</p>
 					<p>grid-template-rows: 1fr 1fr 1fr;</p>
 					<p>}</p>
@@ -79,8 +79,8 @@
 
 
 			<h2>grid-template-columns</h2>
-			<p>"grid-template-columns" permet de crée des colonnes dans lesquels ont pourras y placer des elements (tel que du texte).</p>
-			<p>On peut ainsi les placer au début, à la fin ou au milieu de cet axe. On peut choisir l'epaisseur de chacune de nos colonnes (definis par des px (pixels), % (poucentage), fr (fraction) ou auto (automatic) )  </p>
+			<p>"grid-template-columns" permet de créer des colonnes dans lesquelles on pourra  placer des éléments .</p>
+			<p>On peut ainsi les placer au début, à la fin ou au milieu de cet axe. On peut choisir la largeur de chacune de nos colonnes (definis par des px (pixels), % (poucentage), fr (fraction) ou auto (automatic) )  </p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
@@ -125,7 +125,7 @@
 
 			<h2>grid-template-rows</h2>
 
-			<p>La propriété "grid-template-columns" permet de crée des lignes dans lesquels ont pourras également y placer des elements (qui pourrait aussi être du texte).</p>
+			<p>La propriété "grid-template-rows" permet de créer des lignes dans lesquelles on pourra placer des éléments.</p>
 			
 			<div class="section">
 				<div class="codeblock">
@@ -168,29 +168,33 @@
 
 
 			<h2>grid-template-areas</h2>
-			<p>La propriété "grid-template-areas" permet de permet de définir des zones de grille nommées a notre de la facons que l'on souhaite</p>
+			<p>La propriété "grid-template-areas" permet de définir des zones de grille nommées de la façon que l'on souhaite. Chaque cellule a un nom , qui peut être attribué , en css.</p>
 			<div class="section">
 				<div class="codeblock">
 					<p>.container {</p>
 					<p>display: grid;</p>
-					<p>grid-template-areas: none | string ;</p>
-					<p>}</p>
+					<p>grid-template-areas: 
+						<button name="grid-template-areas" type="button" class="btn" >"un deux" "trois quatre"</button> | 
+						<button name="grid-template-areas" type="button" class="btn" >"deux trois" "quatre un"</button></p>
+					<p>;}</p>
+
+					<p>div.A { grid-area : un; } </p>  
+					<p>div.B { grid-area : deux; }</p> 
+					<p>div.C { grid-area : trois; }</p> 
+					<p>div.D { grid-area : quatre; }</p>
+
+
+
+
+
 					
 					
 				</div>
-				<div class="example">
-					<div class="example-grid-item"></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+				<div class="example examplebis" id="template-area">
+					<div class="A">A</div>
+					<div class="B">B</div>
+					<div class="C">C</div>
+					<div class="D">D</div>
 				</div>
 			</div>
 

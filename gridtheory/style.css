@@ -85,6 +85,14 @@ main{
 
 }
 
+.examplebis{
+	width:33%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+}
+
 
 
 .example div{
@@ -98,6 +106,32 @@ main{
 
 .example-grid-item{
 	background-color: #872657;
+}
+
+/* template-area */
+
+#template-area {
+	grid-template-areas: "un deux" "trois quatre";
+}
+
+.A {
+	grid-area: un;
+	background-color: #B060FFFF;
+}
+
+.B {
+	grid-area: deux;
+	background-color: #FF61B3FF;
+}
+
+.C {
+	grid-area: trois;
+	background-color: #2BFF80FF;
+}
+
+.D {
+	grid-area: quatre;
+	background-color: #61A8FFFF;
 }
 
 
