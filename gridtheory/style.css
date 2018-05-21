@@ -113,23 +113,6 @@ main{
 	background-color: #872657;
 }
 
-<<<<<<< HEAD
-/* grid-template-areas Section */
-.example__grid-item-A{
-	grid-area: A;
-	background-color: lightskyblue;
-}
-
-.example__grid-item-B{
-	grid-area: B;
-	background-color: lightcoral;
-}
-
-.example__grid-item-C{
-	grid-area: C;
-	background-color: lightseagreen;
-}
-=======
 /* template-area */
 
 #template-area {
@@ -156,7 +139,6 @@ main{
 	background-color: #61A8FFFF;
 }
 
->>>>>>> 42df24fca06eb51c55d094aca04d04ae61e051ff
 
 button{
 	background-color: transparent;
