@@ -21,12 +21,17 @@
 }
 
 .intro{
+	margin-left:10%;
+	margin-right: 10%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
-
+.introcutter{
+	margin-left: 10%;
+	margin-right: 10%;
+}
 /* container général contenant tout la grille (il y a la navbar au dessus et le footer en dessous,
 je n'ai pas jugé pratique de les inclure dans la grille comme ça je ne fais qu'une ligne)*/
 
@@ -85,6 +90,14 @@ main{
 
 }
 
+.examplebis{
+	width:33%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+}
+
 
 
 .example div{
@@ -100,6 +113,7 @@ main{
 	background-color: #872657;
 }
 
+<<<<<<< HEAD
 /* grid-template-areas Section */
 .example__grid-item-A{
 	grid-area: A;
@@ -115,6 +129,34 @@ main{
 	grid-area: C;
 	background-color: lightseagreen;
 }
+=======
+/* template-area */
+
+#template-area {
+	grid-template-areas: "un deux" "trois quatre";
+}
+
+.A {
+	grid-area: un;
+	background-color: #B060FFFF;
+}
+
+.B {
+	grid-area: deux;
+	background-color: #FF61B3FF;
+}
+
+.C {
+	grid-area: trois;
+	background-color: #2BFF80FF;
+}
+
+.D {
+	grid-area: quatre;
+	background-color: #61A8FFFF;
+}
+
+>>>>>>> 42df24fca06eb51c55d094aca04d04ae61e051ff
 
 button{
 	background-color: transparent;

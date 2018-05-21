@@ -39,6 +39,9 @@ a{
 	color:#23c3ef;
 }
 
+h1{
+	text-align: center;
+}
 span{
 	color: red;
 }
@@ -161,6 +164,6 @@ button{
 
 
 .warning{
-	background-color: #FF415DFF;
+	background-color: red;
 }
 
